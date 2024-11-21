@@ -1,0 +1,10 @@
+services:
+  tdd:
+    container_name: tdd
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - ./src:/src
+    ports:
+      - "8000:8000"
